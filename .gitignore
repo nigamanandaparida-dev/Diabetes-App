@@ -1,0 +1,10 @@
+**/node_modules/
+.env
+__pycache__/
+api/serviceAccountKey.json
+client/dist/
+.venv/
+ml_project/
+*.csv
+*.sav
+!api/*.sav
