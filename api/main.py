@@ -27,10 +27,12 @@ class DiabetesInput(BaseModel):
     Age: Optional[float] = 0.0
 
 @app.get("/api/predict")
+@app.get("/")
 def home():
     return {"message": "Prediction API is alive"}
 
 @app.post("/api/predict")
+@app.post("/")
 def predict(data: DiabetesInput):
     input_data = np.array([[
         data.Pregnancies,

@@ -10,7 +10,7 @@ import {
   Pill, Stethoscope, Briefcase, FileText
 } from 'lucide-react';
 
-const API_BASE = window.location.hostname === 'localhost' ? 'http://localhost:5000' : '';
+const API_BASE = window.location.hostname === 'localhost' ? 'http://localhost:5000' : '/api';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
